@@ -327,12 +327,12 @@ def calculate_budget(total_budget: int, expenses: str) -> str:
 	Neu vuot ngan sach, canh bao ro rang so tien thieu.
 	"""
 	if total_budget < 0:
-		return "Loi: total_budget phai la so nguyen khong am."
+		return "Lỗi: total_budget phai la so nguyen khong am."
 
 	if not expenses or not expenses.strip():
 		return (
-			"Loi: expenses dang rong. Dung dinh dang: "
-			"'ve_may_bay:890000,khach_san:650000'."
+			"Lỗi: expenses đang rỗng. Đúng định dạng: "
+			"'vé_bay:890000,khách_sạn:650000'."
 		)
 
 	parsed_expenses = {}
