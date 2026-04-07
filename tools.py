@@ -321,13 +321,13 @@ def calculate_budget(total_budget: int, expenses: str) -> str:
 	Tham so:
 	- total_budget: tong ngan sach ban dau (VND)
 	- expenses: chuoi mo ta cac khoan chi, moi khoan cach nhau boi dau phay
-	  dinh dang 'ten_khoan:so_tien' (VD: 've_may_bay:890000,khach_san:650000')
+	  dinh dang 'ten_khoan:so_tien' (VD: 'vé_bay:890000,khách_sạn:650000')
 
 	Tra ve bang chi tiet cac khoan chi va so tien con lai.
 	Neu vuot ngan sach, canh bao ro rang so tien thieu.
 	"""
 	if total_budget < 0:
-		return "Lỗi: total_budget phai la so nguyen khong am."
+		return "Lỗi: total_budget phải là số nguyên không âm."
 
 	if not expenses or not expenses.strip():
 		return (
